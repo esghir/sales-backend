@@ -21,8 +21,11 @@ public class Product {
     @Column(nullable = false)
     private BigDecimal price;
 
+    private String imageUrl;
+
     @Column(nullable = false)
     private Integer stockQuantity;
 
-    private String imageUrl;
+    @Column(nullable = false)
+    private boolean active = true;
 } 
